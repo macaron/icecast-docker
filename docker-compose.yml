@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  icecast:
+    image: rtlsdr/icecast:2.4.4
+    volumes:
+      - ./icecast.xml:/etc/icecast.xml
+    ports:
+      - "8000:8000"
